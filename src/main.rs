@@ -1,8 +1,12 @@
-mod d3q1;
+use std::env;
+
+mod d3q2;
 
 fn main() {
-    println!("Hello, world!");
-    let result = d3q1::process("day3_input.txt");
+    let args: Vec<String> = env::args().collect();
+    let input_file = &args[1];
+    
+    let result = d3q2::process(input_file);
 
     println!("--------------");
     match result {
