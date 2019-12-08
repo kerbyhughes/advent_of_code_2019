@@ -1,12 +1,14 @@
-use std::env;
+//use std::env;
 
-mod d3q2;
+mod d4q1;
 
 fn main() {
+    /*
     let args: Vec<String> = env::args().collect();
     let input_file = &args[1];
-    
-    let result = d3q2::process(input_file);
+    */
+
+    let result = d4q1::process();
 
     println!("--------------");
     match result {
