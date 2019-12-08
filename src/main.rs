@@ -1,6 +1,6 @@
 //use std::env;
 
-mod d4q1;
+mod d4q2;
 
 fn main() {
     /*
@@ -8,7 +8,7 @@ fn main() {
     let input_file = &args[1];
     */
 
-    let result = d4q1::process();
+    let result = d4q2::process();
 
     println!("--------------");
     match result {
